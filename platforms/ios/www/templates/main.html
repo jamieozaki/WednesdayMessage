@@ -1,0 +1,57 @@
+<script type="text/javascript" src="js/countdown.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#countdown").countdown({
+                date: "3 may 2016 12:00:00",
+                format: "on"
+            },
+
+            function () {
+                // callback function
+            });
+    });
+</script>
+
+<ion-view view-title="">
+    <ion-content>
+        <div class="main">
+            <div class="logo"><img src="img/main-logo.jpg" width="100%" height="auto"></div>
+            
+            <section class="counter">
+                <ul id="countdown">
+
+                    <li class="Valdays">
+                        <span class="days">00</span>
+                        <p class="timeRefDays">Days</p>
+                    </li>
+                    <li class="Valhours">
+                        <span class="hours">00</span>
+                        <p class="timeRefHours">Hours</p>
+                    </li>
+
+                    <li class="Valminutes">
+                        <span class="minutes">00</span>
+                        <p class="timeRefMinutes">Minutes</p>
+                    </li>
+
+
+                    <li class="Valseconds">
+                        <span class="seconds">00</span>
+                        <p class="timeRefSeconds">Seconds</p>
+                    </li>
+                </ul>
+            </section>
+            <div class="venue">
+                <p class="date">May 3 to 7, 2016</p>
+                <p>Subterranean Penang International Convention and Exhibition Centre (S.P.I.C.E.) in Penang, Malaysia</p>
+               
+            </div>
+            <div class="bar bar-footer">
+             <button href="#/app/ticket" class="button button-full button-light buyTicket">Buy Ticket</button>
+            </div>
+            
+
+
+        </div>
+    </ion-content>
+</ion-view>

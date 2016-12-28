@@ -1,0 +1,238 @@
+/* Empty. Add your own CSS if you like */
+
+body {
+    background: #000;
+    color: #fff;
+font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.bar.bar-header {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 center !important;
+  border: 0 none !important;
+    color: #fff;
+}
+
+.bar.bar-header .title { color: #fff !important; }
+
+.bar-stable .button.button-clear {
+  color: #F8A74E;
+}
+
+.buttonSubmit {
+    background-color: #F8A74E;
+    color: #fff;
+}
+
+.buttonSubmit:hover, .buttonSubmit:focus, .buttonSubmit:hover, .buttonSubmit.activated {
+    background-color: #F8A74E;
+    color: #fff;
+}
+
+.pane {
+    background: #041F2C;
+}
+
+.pane .main .venue {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 0 0 50px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.pane .logo {
+    margin: 10px 0 10px 0;
+}
+
+.pane .main .timer-wrap {
+    background: #000;
+}
+
+/* jQuery Countdown styles 1.6.1. */
+.counter {
+  border-radius: 8px;
+  clear: both;
+  margin: -10% auto 10%;
+  overflow: hidden;
+  padding: 2% 0 1%;
+  position: relative;
+  width: 60%;
+    color: #fff;
+}
+
+
+.counter p { margin: 0; }
+
+
+.countdown {
+	float: left;
+	margin: 40px 0 0 0;
+}
+
+.countdown span {
+	display: block !important;
+}
+
+
+#countdown li {
+  color: #fff;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  width: 25%;
+}
+
+.counter li span {
+  font-size: 1.5em;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.counter li p {
+  font-size: 0.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+    color: #6c869d;
+}
+
+.bar-footer .button {
+    margin: 0;
+}
+
+.bar-footer { background:  #F8A74E; }
+.bar-footer:hover, .bar-footer.activated, .bar-footer:hover .button.buyTicket, .button.buyTicket.activated, .bar-footer.activated .button.buyTicket.activated {
+    background: #da7137;
+    color: #fff;
+}
+
+
+.button.buyTicket {
+    font-size: 1em;
+    background: #F8A74E;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/**
+  Roboto Font
+  Google
+  Apache License, version 2.0
+  http://www.apache.org/licenses/LICENSE-2.0.html
+ */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-light.ttf") format("truetype"), url("../fonts/roboto-light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-medium.ttf") format("truetype"), url("../fonts/roboto-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"); }
+
+/**
+  Roboto Font
+  Google
+  Apache License, version 2.0
+  http://www.apache.org/licenses/LICENSE-2.0.html
+ */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-light.ttf") format("truetype"), url("../fonts/roboto-light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-medium.ttf") format("truetype"), url("../fonts/roboto-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"); }
+
+.date { font-size: 1.5em; }
+.date::after {
+  border-bottom: 1px solid #6c869d !important;
+  content: "";
+  display: block;
+  margin: 3% auto;
+  position: relative;
+  text-align: center;
+  width: 10%;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #fff; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #fff; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #fff;
+  text-indent: 0; }
+
+
+.ticket .item {
+  border-color: #1d4c64;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  font-size: 16px;
+  margin: -1px;
+  z-index: 2;
+}
+
+
+.menu .item {
+  border-color: #b95721;
+}
+
+.ticket .input-label {
+  color: #6c869d;
+  display: table;
+  font-size: 16px;
+  max-width: 200px;
+  width: 35%;
+}
+
+.ticket .item-input input {
+color: #fff !important;
+}
+
+.menu {
+  background-color: #DA7137;
+
+}
+
+.menu .item-complex .item-content, .menu .item-radio .item-content {
+  background-color: #da7137 !important;
+  color: #fff !important;
+}

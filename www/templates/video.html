@@ -1,0 +1,160 @@
+<ion-view hide-nav-bar="false">
+    <div class="bar bar-header">
+        <a href="#/app/list">
+            <button class="button button-icon icon ion-person"></button>
+        </a>
+
+        <div class="h1 title"><img src="img/main-logo.png" width="100%" height="auto"></div>
+
+        <button class="button button-icon icon ion-log-out"></button>
+    </div>
+    <ion-content class="videoInside">
+        <div class="video">
+            <div class="item item-body">
+                <div class="videoCont">
+                    <iframe id="myframe" src="http://players.brightcove.net/3745659807001/67a68b89-ec28-4cfd-9082-2c6540089e7e_default/index.html?videoId=4727635811001" style="width: 100%; height: 100%"></iframe>
+                </div>
+                <div class="stats row" ng-controller="VidCtrl">
+                    <div class="item-stat col-33"><i class="ion-play"></i><span class="badge">{{myplay}}</span></div>
+                    <div class="item-stat col-33"><i class="ion-eye"></i><span class="badge">{{myview}}</span></div>
+                    <div class="item-stat col-33"><i class="ion-chatbox-working"></i><span class="badge">{{mycomments}}</span></div>
+
+                </div>
+                <h3 ng-controller="VidCtrl" class="title">{{mytitle}}Chief's Wednesday Message #186</h3>
+                <div class = "details">
+                    <div class="left">                   
+                        <p ng-controller="VidCtrl" class="date">Aug 12, 2016</p>
+                        <p class="duration">3:35</p>
+                    </div>
+                    <div class="right">
+                        <button class="share"><i class="icon ion-android-share-alt"></i> &nbsp; Share</button>
+                        <button class="watchlater"><i class="icon ion-android-time"></i> &nbsp; Watch Later</button>
+                    </div>
+                </div>
+                <p ng-controller="VidCtrl" class="description">
+                    {{mydescription}} Network Marketing is the only industry left in the planet where you can’t succeed alone. You need to be with a team, and the key component of building a team is by establishing trespass. Trespass is the ability not only to speak , but have others listen while you speak. Establishing trespass is a long journey. It will be difficult and frustrating, but always remember that trespass is a necessity if you want to succeed in Network Marketing.
+                    <br/> The last thing that you will want to do is take trespass for granted. Always keep your door open and let other people in. An effective networker has an effective relationship, and the only time a relationship is effective is when there’s trespass.
+                    <br/> Learn more about this concept by watching the Chief’s Wednesday Message 186.
+                    <br/> Watch Chief’s Wednesday Message 186!
+                    <br/> PLUS! Chief’s Wednesday Message 185 is now available with Arabic, French, Russian, Turkish, Bahasa-Indonesian, Farsi, Burmese, Tamil, and Singhalese sub-titles!
+                </p>
+                <p class="subdued" ng-controller="VidCtrl"><span class="label">Subtitles:
+				</span> {{mylanguage}}</p>
+
+                <div class="moodmeter">
+                    <p>How does this make you feel?</p>
+                    <ul>
+                        <li>
+                            <p class="mood">wow</p>
+                            <p class="moodcount">10</p>
+                        </li>
+                        <li>
+                            <p class="mood">funny</p>
+                            <p class="moodcount">567</p>
+                        </li>
+                        <li>
+                            <p class="mood">love</p>
+                            <p class="moodcount">874</p>
+                        </li>
+                        <li>
+                            <p class="mood">sad</p>
+                            <p class="moodcount">35</p>
+                        </li>
+                        <li>
+                            <p class="mood">angry</p>
+                            <p class="moodcount">50</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="commentcontainer">
+                <span class="commentcount">276 comments</span>
+                <ul>
+                    <li>
+                        <img class="thumbnail" src="/img/85.jpg" />
+                        <div class="comment-input">
+                            <input type="text" placeholder="add comment">
+                        </div>
+                    </li>
+                    <li>
+                        <img class="thumbnail" src="/img/85.jpg" />
+                        <div class="comment">
+                            <div class="details">
+                                <p class="author">Eleanor Neal</p>
+                                <p class="dateposted">Oct 21, 2016</p>
+                                <p class="timeposted">7:16pm</p>
+                            </div>
+                            <div class="commenttext">Learn more about this concept by watching the Chief’s Wednesday Message 186.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="thumbnail" src="/img/13.jpg" />
+                        <div class="comment">
+                            <div class="details">
+                                <p class="author">Harris Fuentes</p>
+                                <p class="dateposted">Oct 21, 2016</p>
+                                <p class="timeposted">7:16pm</p>
+                            </div>
+                            <div class="commenttext">Learn more about this concept.</div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <img class="thumbnail" src="/img/53.jpg" />
+                        <div class="comment">
+                            <div class="details">
+                                <p class="author">Tony Santos</p>
+                                <p class="dateposted">Oct 21, 2016</p>
+                                <p class="timeposted">7:16pm</p>
+                            </div>
+                            <div class="commenttext">Learn more about this concept by watching the Chief’s Wednesday Message 186.</div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="seemore"> see more </button>
+            </div>
+
+            <div class="earlier">
+                <div class="head">Earlier Videos</div>
+                <div class="list">
+
+                    <a class="item item-thumbnail-left" href="#">
+
+                        <img src="http://placehold.it/136x90">
+                        <h4 class="title">Chief shares with us three important points in Network Marketing journey.</h4>
+                        <p class="date">Date</p>
+                        <div class="eps">000</div>
+                        <div class="btn">
+                            <button class="button"><i class="icon ion-close"></i></button>
+                        </div>
+                    </a>
+
+                    <a class="item item-thumbnail-left" href="#">
+
+                        <img src="http://placehold.it/136x90">
+                        <h4 class="title">Make this week brand new by spending the next few days re-establishing trespass in your people</h4>
+                        <div class="eps">000</div>
+                        <p class="date">Date</p>
+                        <div class="btn">
+                            <button class="button"><i class="icon ion-close"></i></button>
+                        </div>
+                    </a>
+
+                    <a class="item item-thumbnail-left" href="#">
+
+                        <img src="http://placehold.it/136x90">
+                        <h4 class="title">Title</h4>
+                        <div class="eps">000</div>
+                        <p class="date">Date</p>
+                        <div class="btn">
+                            <button class="button"><i class="icon ion-close"></i></button>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

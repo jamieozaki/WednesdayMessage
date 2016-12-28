@@ -1,0 +1,41 @@
+<ion-view hide-nav-bar="true" view-title="PRO Member Login"  class="loginPage">
+<ion-view class="loginPage">
+    <ion-content class="no-header">
+	<header id="hero" class="header">
+	</header>
+    <form>
+      <div class="login-logo">
+        <img src="/img/Wed-Message.png">
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <!-- <span class="input-label">Username</span> -->
+          <input placeholder="Username" type="text" required autofocus ng-model="data.datausername">
+        </label>
+        <label class="item item-input">
+          <!-- <span class="input-label">Password</span> -->
+          <input id="mypass" placeholder="Password" type="password" required ng-model="data.datapassword">
+        </label>
+        <label class="item">
+			<div class="alert alert-danger" role="alert" ng-show="errorMsg">
+        {{errorMsg}}
+      </div>
+			<button class="button button-block button-positive" type="submit" ng-click="postForm(data)">Log in</button>
+        </label>
+      </div>
+      <div class="link-register">
+        <p> No login? <a href="#">Sign up here</a></p>
+      </div>
+    </form>
+    <!-- Video background start -->
+    <div>
+      <div class="overlay">
+      </div>
+      <video autoplay muted loop class="bg-vid" controls preload="auto" webkit-playsinline  >
+        <source src="http://www.w3schools.com/tags/movie.mp4" type="video/webm">
+        <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+      </video>
+    </div>
+    <!-- Video background end -->
+  </ion-content>
+</ion-view>

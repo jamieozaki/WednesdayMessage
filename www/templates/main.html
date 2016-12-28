@@ -1,0 +1,49 @@
+<ion-view>
+    <ion-nav-title>
+        {{mytitle}}
+    </ion-nav-title>
+    
+    <div class="bar bar-header item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" placeholder="Search">
+  </label>
+  <button class="button button-clear">
+    Cancel
+  </button>
+</div>
+
+    <ion-content class="main">
+
+        <!-- HERO item -->
+
+        <item class="hero" type="item-text-wrap" href="#/app/video?id={{myvideo.bcid}}">
+
+            <a href="#/app/video?id={{myvideo.bcid}}&num={{myvideo.name}}" class="list">
+                <div class="item">
+                    <img class="full-image" src="/img/loading.png" ng-src="http://www.the-v.net/{{myvideo.image}}">
+                    <!-- jamie-edit start -->
+                    <div class="video-details">
+                        <div class="title">Chief’s Wednesday Message 189</div>
+                        <p class="short-description">Make this week brand new by spending the next few days re-establishing trespass in your people</p>
+                        <p class="date"> Dec 7, 2016</p>
+                    </div>
+                </div>
+            </a>
+
+        </item>
+
+
+        <!-- list -->
+        <item ng-repeat="myvideo in myvideos" type="item-text-wrap" href="#/app/video?id={{myvideo.bcid}}">
+
+            <a href="#/app/video?id={{myvideo.bcid}}&num={{myvideo.name}}" class="item item-thumbnail-left" href="#">
+                <img class="full-image" src="/img/loading.png" ng-src="http://www.the-v.net/{{myvideo.image}}">
+                <p class="short description">Make this week brand new by spending the next few days re-establishing trespass in your people</p>
+                <div class="number">{{myvideo.name.replace("`","’").replace("Chief Pathman’s Wednesday Message Video ","")}}</div>
+                <p class="date">Date</p>
+            </a>
+
+        </item>
+    </ion-content>
+</ion-view>
